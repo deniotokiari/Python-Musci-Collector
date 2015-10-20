@@ -1,0 +1,24 @@
+body {
+    counter-reset: section;
+}
+
+td {
+    padding-right: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+    color: white;
+}
+
+.counter {
+    counter-increment: section;
+    padding: 5px;
+}
+
+.counter:before {
+    content: counter(section) "";
+}
